@@ -22,6 +22,6 @@ public class Calculator {
      * @return Difference between the first and the second number
      */
     public static int subtract(int x, int y) {
-        return x - y;
+        return x + y;
     }
 }
