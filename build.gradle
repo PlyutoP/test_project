@@ -1,8 +1,25 @@
 apply plugin: 'java'
 
+
 repositories {
     mavenCentral()
 }
+
+
+apply plugin: 'jacoco'
+
+
+
+
+jacoco {
+    toolVersion = "0.8.2"
+    reportsDir = file("$buildDir/reports/jacoco")
+}
+
+
+
+
+
 
 dependencies {
     testCompile 'junit:junit:4.12'
@@ -12,3 +29,5 @@ dependencies {
 test {
     outputs.upToDateWhen { false }
 }
+
+
